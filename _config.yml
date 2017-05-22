@@ -4,13 +4,11 @@ description: "sunoonlee's blog"
 url: "https://sunoonlee.github.io"
 
 
-
-
 # Secondary Parameters
 baseurl: ""
 header-img: img/home-bg.jpg
 headercolor: "#FFFFFF"
-logo: /project-pages/img/logos/Project-Pages-New-Logo-Inverted.png
+logo: 
 
 # Tertiary Parameters
 github_username: sunoonlee
