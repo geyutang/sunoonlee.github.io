@@ -3,3 +3,6 @@ _site
 .jekyll-metadata
 .DS_STORE
 *.plist
+
+_posts/#*
+_posts/.#*
