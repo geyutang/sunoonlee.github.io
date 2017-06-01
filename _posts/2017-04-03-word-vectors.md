@@ -1,8 +1,8 @@
 ---
 layout: post
 title: 词向量和 word2vec
-subtitle: CS224n Lecture 2 笔记.
-tags: DeepLearning NLP
+subtitle: CS224n Lecture 2 笔记
+tags: Deep_Learning NLP
 category: tech
 ---
 
@@ -34,6 +34,11 @@ cs224n 对 word2vec 的介绍对新手并不友好，但课程建议阅读的材
 
 word2vec 的基本架构并不复杂，不过是一个单隐层神经网络，隐层不加激活函数，输出层用 softmax 激活。复杂之处可能在于具体的训练过程，特别是出于工程考虑采用的一些技巧。
 
+
+word2vec 的训练: 单隐层神经网络, 隐层不激活, 输出层用 softmax 激活. 隐层节点数: google 用 300.
+
+输入层 到 隐层 的矩阵运算, 可以简化为 lookup
+
 word2vec 采用的基本模型用两种，一是上面文章里介绍的 skip-gram，二是 continuous bag-of-words(CBOW)。区别是前者由中心词预测 context，后者则相反。前者应用更广。
 
 word2vec 的具体训练方法就是更高级的话题了，涉及很多工程上的考虑。常用的两种高效的方法，一是 negative sampling, 二是 hierarchical softmax。Chris McCormick 还写过一篇 [Word2Vec Tutorial Part 2 - Negative Sampling](http://mccormickml.com/2017/01/11/word2vec-tutorial-part-2-negative-sampling/)，介绍了 word2vec 作者提出的改进 skip-gram model 的一些方法，包括：
@@ -42,3 +47,8 @@ word2vec 的具体训练方法就是更高级的话题了，涉及很多工程�
 * negative sampling, 这是文章的重点
 
 Negative sampling 是指，通过在训练时的近似处理，大大减小每条 training example 更新 weights 矩阵的计算量(注意这里的 sampling 跟输入的样本不是一个概念)。具体来说，本来每个 training example 会让 weights 矩阵中所有词对应的行或列都更新一遍，但实际上这条 example 只对应一个 true word，对其余所有的 negative words 对应的权重影响很小，因此可以只从中选最高频的几个(5-20 个)。
+
+### ChangeLog
+
+* 170403 init
+* 170527 修改

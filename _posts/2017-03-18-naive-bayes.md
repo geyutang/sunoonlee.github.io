@@ -59,7 +59,7 @@ $$ F = \frac {(\beta ^2 + 1)PR}{(\beta ^2 P + R)} $$
 
 ### 实例
 
-这里是我写的一个实际例子: [naive_bayes_implementation.ipynb](https://github.com/sunoonlee/deep-NLP-basics/blob/master/naive_bayes/naive_bayes_sentiment.ipynb)
+这里是一个实际例子: [naive_bayes_implementation.ipynb](https://github.com/sunoonlee/machine-learning/blob/master/naive_bayes/naive_bayes_sentiment.ipynb)
 
 实际计算时, 需要考虑浮点数计算精度的问题. 在概率连乘的时候，因为不同词的概率数量级差别可能很大，容易使计算精度的损失被放大. 解决方法可以是对概率取对数, 把概率的连乘转换为对数的相加.
 
