@@ -2,7 +2,7 @@
 layout: post
 title: 词向量和 word2vec
 subtitle: CS224n Lecture 2 笔记
-tags: Deep_Learning NLP
+tags: DeepLearning NLP
 category: tech
 ---
 

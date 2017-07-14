@@ -1,7 +1,7 @@
 ---
 layout: project
-title: "Tech"
-description: "Programming, Machine Learning, NLP, ..."
+title: "技术"
+description:
 header-img: "img/home-bg.jpg"
 category: tech
 ---

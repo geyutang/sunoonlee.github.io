@@ -1,7 +1,7 @@
 ---
 layout: page
-title: "About"
-description: "Finding Meaning in the Age of Darwin"
+title: "关于"
+description:
 header-img: "img/home-bg.jpg"
 ---
 
