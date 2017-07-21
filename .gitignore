@@ -4,5 +4,7 @@ _site
 .DS_STORE
 *.plist
 
-_posts/#*
-_posts/.#*
+# emacs
+#*
+.#*
+ltximg
